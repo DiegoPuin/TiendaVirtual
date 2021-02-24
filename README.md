@@ -1,3 +1,3 @@
 # TiendaVirtual
 Tienda virtual desarrollada en Django
-Por problemas de conexion me permite subir los archivos directamente al repositorio, por lo tanto esta el archivo comprimido, cuando lo pueda solucionar dejo los archivos subidos correctamente.
+Por problemas de conexion no me permite subir los archivos directamente al repositorio, por lo tanto esta el archivo comprimido, cuando lo pueda solucionar dejo los archivos subidos correctamente.
