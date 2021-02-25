@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TiendaOnline</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Wish shop project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+	
+	<!-- Header -->
+
+	<header class="header">
+		<div class="header_inner d-flex flex-row align-items-center justify-content-start">
+			<div class="logo"><a href="#">TiendaOnline</a></div>
+			<nav class="main_nav">
+				<ul>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Comestibles</a></li>
+					<li><a href="#">Aseo</a></li>
+					<li><a href="#">Plasticos</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+			<div class="header_content ml-auto">
+				<div class="search header_search">
+					<form action="#">
+						<input type="search" class="search_input" required="required">
+						<button type="submit" id="search_button" class="search_button"><img src="images/magnifying-glass.svg" alt=""></button>
+					</form>
+				</div>
+				<div class="shopping">
+					<!-- Cart -->
+					<a href="#">
+						<div class="cart">
+							<img src="images/shopping-bag.svg" alt="">
+							<div class="cart_num_container">
+								<div class="cart_num_inner">
+									<div class="cart_num">1</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					<!-- Star -->
+					<a href="#">
+						<div class="star">
+							<img src="images/star.svg" alt="">
+							<div class="star_num_container">
+								<div class="star_num_inner">
+									<div class="star_num">0</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					<!-- Avatar -->
+					<a href="#">
+						<div class="avatar">
+							<img src="images/avatar.svg" alt="">
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="burger_container d-flex flex-column align-items-center justify-content-around menu_mm"><div></div><div></div><div></div></div>
+		</div>
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+		<div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
+		<div class="logo menu_mm"><a href="#">TiendaOnline</a></div>
+		<div class="search">
+			<form action="#">
+				<input type="search" class="search_input menu_mm" required="required">
+				<button type="submit" id="search_button_menu" class="search_button menu_mm"><img class="menu_mm" src="images/magnifying-glass.svg" alt=""></button>
+			</form>
+		</div>
+		<nav class="menu_nav">
+			<ul class="menu_mm">
+				<li class="menu_mm"><a href="#">Inicio</a></li>
+				<li class="menu_mm"><a href="#">Comestibles</a></li>
+				<li class="menu_mm"><a href="#">Aseo</a></li>
+				<li class="menu_mm"><a href="#">Plasticos</a></li>
+				<li class="menu_mm"><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<!-- Home -->
+
+	<div class="home">
+		
+		<!-- Home Slider -->
+
+		<div class="home_slider_container">
+			<div class="owl-carousel owl-theme home_slider">
+				
+				<!-- Home Slider Item -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images/comestibles.jpg)"></div>
+					<div class="home_slider_content">
+						<div class="home_slider_content_inner">
+							<div class="home_slider_subtitle">Productos</div>
+							<div class="home_slider_title">Comestibles</div>
+						</div>	
+					</div>
+				</div>
+
+				<!-- Home Slider Item -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images/aseo.jpg)"></div>
+					<div class="home_slider_content">
+						<div class="home_slider_content_inner">
+							<div class="home_slider_subtitle">Productos</div>
+							<div class="home_slider_title">Aseo</div>
+						</div>	
+					</div>
+				</div>
+
+				<!-- Home Slider Item -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images/carnicos.jpg)"></div>
+					<div class="home_slider_content">
+						<div class="home_slider_content_inner">
+							<div class="home_slider_subtitle">Productos</div>
+							<div class="home_slider_title">Carnicos</div>
+						</div>	
+					</div>
+				</div>
+
+			</div>
+			
+			<!-- Home Slider Nav -->
+
+			<div class="home_slider_next d-flex flex-column align-items-center justify-content-center"><img src="images/arrow_r.png" alt=""></div>
+
+			<!-- Home Slider Dots -->
+
+			<div class="home_slider_dots_container">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="home_slider_dots">
+								<ul id="home_slider_custom_dots" class="home_slider_custom_dots">
+									<li class="home_slider_custom_dot active">01.<div></div></li>
+									<li class="home_slider_custom_dot">02.<div></div></li>
+									<li class="home_slider_custom_dot">03.<div></div></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</div>
+
+	<!-- Promo -->
+
+	<div class="promo">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container text-center">
+						<div class="section_subtitle">LOS MEJORES PRODUCTOS</div>
+						<div class="section_title">A LOS MEJORES PRECIOS</div>
+					</div>
+				</div>
+			</div>
+			<div class="row promo_container">
+
+				<!-- Promo Item -->
+				<div class="col-lg-4 promo_col">
+					<div class="promo_item">
+						<div class="promo_image">
+							<img src="images/promo_1.jpg" alt="">
+							<div class="promo_content promo_content_1">		
+							</div>
+						</div>
+						<div class="promo_link"><a href="#">Comprar ahora con un 30%</a></div>
+					</div>
+				</div>
+
+				<!-- Promo Item -->
+				<div class="col-lg-4 promo_col">
+					<div class="promo_item">
+						<div class="promo_image">
+							<img src="images/promo_2.jpg" alt="">
+							<div class="promo_content promo_content_2">
+								
+							</div>
+						</div>
+						<div class="promo_link"><a href="#">Comprar ahora con un 10%</a></div>
+					</div>
+				</div>
+
+				<!-- Promo Item -->
+				<div class="col-lg-4 promo_col">
+					<div class="promo_item">
+						<div class="promo_image">
+							<img src="images/promo_3.jpg" alt="">
+							<div class="promo_content promo_content_3">
+							
+							</div>
+						</div>
+						<div class="promo_link"><a href="#">comprar ahora con un 5%</a></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- New Arrivals -->
+
+	<div class="arrivals">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container text-center">
+						
+						<div class="section_title">NUEVOS PRODUCTOS</div>
+					</div>
+				</div>
+			</div>
+			<div class="row products_container">
+
+				{% for product in my_info.products %}
+				<!-- Product -->
+				<div class="col-lg-4 product_col">
+					<div class="product">
+						<div class="product_image">
+							<img src="{{ product.image }}" alt="Product Image" width="80" height="80">
+						</div>
+						<div class="rating rating_4">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="product_content clearfix">
+							<div class="product_info">
+								<div class="product_name"><a>{{ product.name }}</a></div>
+								<div class="product_price">${{product.price}}</div>
+							</div>
+							<div class="product_options">
+								<div class="product_buy product_option"><img src="images/shopping-bag-white.svg" alt=""></div>
+								<div class="product_fav product_option">+</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+				<!-- Product -->
+				<!--
+				<div class="col-lg-4 product_col">
+					<div class="product">
+						<div class="product_image">
+							<img src="images/product_2.jpg" alt="">
+						</div>
+						<div class="rating rating_4">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="product_content clearfix">
+							<div class="product_info">
+								<div class="product_name"><a href="product.html">Desinfectante antiséptico</a></div>
+								<div class="product_price">$28.000</div>
+							</div>
+							<div class="product_options">
+								<div class="product_buy product_option"><img src="images/shopping-bag-white.svg" alt=""></div>
+								<div class="product_fav product_option">+</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				-->
+
+				<!-- Product -->
+				<!--
+				<div class="col-lg-4 product_col">
+					<div class="product">
+						<div class="product_image">
+							<img src="images/product_3.jpg" alt="">
+						</div>
+						<div class="rating rating_4">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="product_content clearfix">
+							<div class="product_info">
+								<div class="product_name"><a href="product.html">Dog Chow</a></div>
+								<div class="product_price">$50.000</div>
+							</div>
+							<div class="product_options">
+								<div class="product_buy product_option"><img src="images/shopping-bag-white.svg" alt=""></div>
+								<div class="product_fav product_option">+</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				-->
+			</div>
+		</div>
+	</div>
+
+	<!-- Extra -->
+
+	
+	<!-- Gallery -->
+
+	<!-- Testimonials -->
+
+	<div class="testimonials">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container text-center">
+						
+						<div class="section_title">TESTIMONIOS</div>
+					</div>
+				</div>
+			</div>
+			<div class="row test_slider_container">
+				<div class="col">
+
+					<!-- Testimonials Slider -->
+					<div class="owl-carousel owl-theme test_slider text-center">
+
+						<!-- Testimonial Item -->
+						<div class="owl-item">
+							<div class="test_text">“Es perfecto, mi tienda favorita ahora es virtual, no tengo 	que preocuparme si esta lloviendo para comprar lo que mas me gusta”</div>
+							<div class="test_content">
+					
+								<div class="test_name">Claudia Gomez</div>
+								<div class="test_title">Cliente</div>
+							</div>
+						</div>
+
+						<!-- Testimonial Item -->
+						<div class="owl-item">
+							<div class="test_text">“Lo que más me gusta es estar tener a la mano en cualquier momento mi tienda de confianza, puedo pedir cuando quiera.</div>
+							<div class="test_content">
+								
+								<div class="test_name">Samuel Medina</div>
+								<div class="test_title">Cliente</div>
+							</div>
+						</div>
+
+						<!-- Testimonial Item -->
+						<div class="owl-item">
+							<div class="test_text">“Jamás pense poder concocer los precios de los productos que necesito sin necesidad de acercame a la tienda.”</div>
+							<div class="test_content">
+								
+								<div class="test_name">Germán Garmendia</div>
+								<div class="test_title">cliente</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Newsletter -->
+
+	<div class="newsletter">
+		<div class="newsletter_content">
+			<div class="newsletter_image" style="background-image:url(images/newsletter.jpg)"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="section_title_container text-center">
+							<div class="section_subtitle"></div>
+							<div class="section_title">Suscríbete para obtener información en tiempo real de nuestras ofertas</div>
+						</div>
+					</div>
+				</div>
+				<div class="row newsletter_container">
+					<div class="col-lg-10 offset-lg-1">
+						<div class="newsletter_form_container">
+							<form action="#">
+								<input type="email" class="newsletter_input" required="required" placeholder="Ingrese su correo aquí">
+								<button type="submit" class="newsletter_button">Suscribirse</button>
+							</form>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="plugins/colorbox/jquery.colorbox-min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
